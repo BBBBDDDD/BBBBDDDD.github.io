@@ -285,13 +285,14 @@ function Background() {
 }
 
 function start() {
+  TITLEMUSIC.stop();
+  BACKGROUNDMUSIC.loop();
+  
   playcheck++;
   FAT = 0;
   SCORE = 0;
   x = 80;
   y = height/6
-
-  BACKGROUNDMUSIC.loop();
 
   candy = [];
   candy2 = [];
